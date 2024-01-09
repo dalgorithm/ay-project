@@ -1,0 +1,96 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<!-- main container -->
+<div class='maincontainer'>
+    <!-- header -->
+    <div class="header">
+        <!-- logo container -->
+    <div class="logo" style="background-image:url(/static/images/gp.jpg);background-repeat:no-repeat;background-size:100% 50px;"></div>
+    <!-- logo container end -->
+    
+    <!-- menu container -->
+    <div id="menuicon" onclick="showmenu()"><i class="fa fa-list"></i></div>
+    <div id="menuiconc" onclick="closemenu()"><i class="fa fa-close"></i></div>
+    <div class="menu">
+    <!-- primary menu-->
+    
+    <a href="/" data-link><li>Home</li></a>
+    <a href="/about" data-link><li>About</li></a>
+    <a href="/contact" data-link><li>Contact us</li></a>
+    <a href="/login" data-link><li>Login</li></a>
+    <a href="/membership" data-link><li>Become a member</li></a>
+    
+    
+    </div>
+    </div>
+    <div class="mobilemenu" id="mobilemenu">
+        <!-- primary menu-->
+        
+        <a href="/" data-link><li>Home</li></a>
+        <a href="/about" data-link><li>About</li></a>
+        <a href="/contact" data-link><li>Contact us</li></a>
+        <a href="/login" data-link><li>Login</li></a>
+        <a href="/membership" data-link><li>Become a member</li></a>
+        
+      
+        </div>
+       
+    <!-- header -->
+    <div id="app"></div>
+    
+<!-- footer section -->
+    <div class="footer">
+                <p>&copy; Copyright Greenpeace 2023.</p>
+        
+        </div>
+    </div>
+
+    <script>
+        function showmenu(){
+           document.getElementById('mobilemenu').style.display = "block";
+           document.getElementById('menuicon').style.display = "none";
+           document.getElementById('menuiconc').style.display = "block";
+           
+           
+        }
+    
+        function closemenu(){
+            document.getElementById('mobilemenu').style.display = "none";
+            document.getElementById('menuicon').style.display = "block";
+            document.getElementById('menuiconc').style.display = "none";
+         
+        }
+
+    function validateForm(){
+        let x = document.forms["myform"]["name"].value;
+        if(x == ""){
+            alert("Fields cannot be empty");
+            returnl
+        }
+       
+    }
+    </script>
+
+<script type="module" src="/static/js/index.js"></script>
+
+
+
+
+
+
+</body>
+</html>
+
+
+
